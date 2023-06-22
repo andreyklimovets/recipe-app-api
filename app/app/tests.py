@@ -6,8 +6,8 @@ from django.test import SimpleTestCase
 from . import calc
 
 class CalcTests(SimpleTestCase):
-	"""Test the calc module."""
-        
+    """Test the calc module."""
+    
     def test_add_numbers(self):	
         """Test adding numbers together."""
 
