@@ -8,7 +8,8 @@ from django.db.utils import OperationalError
 from django.core.management.base import BaseCommand
 
 class Command(BaseCommand):
-
+    """Wait for db class"""
+    
     def handle(self, *args, **options):
         """ Db cheker. """
         self.stdout.write('Database is starting!')
