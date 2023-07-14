@@ -46,4 +46,4 @@ class TagViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
 
     def get_queryset(self):
         """Filter queryset for authenticated user."""
-        return Tag.objects.filter(user=self.request.user).order_by('-name')
+        return self.queryset.filter(user=self.request.user).order_by('-name')
